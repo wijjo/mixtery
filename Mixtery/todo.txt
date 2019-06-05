@@ -1,0 +1,7 @@
+# Pre-load button images
+
+# Implement next/previous + rewind (?)
+
+Does it make sense to make the previous button first rewind the song before going to the previous song?
+
+How does next/previous work at the end/beginning?

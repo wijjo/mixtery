@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mixtery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="s7O-Im-zF3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4nP-bA-XA6">
+                                <rect key="frame" x="0.0" y="20" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="9Ad-IZ-VeF"/>
+                                    <constraint firstAttribute="width" constant="320" id="Qph-eI-qsO"/>
+                                    <constraint firstAttribute="width" secondItem="4nP-bA-XA6" secondAttribute="height" multiplier="1:1" id="TQf-rX-NE2"/>
+                                    <constraint firstAttribute="width" constant="240" id="r3X-hO-Uxr"/>
+                                    <constraint firstAttribute="height" constant="240" id="yIh-bd-FIT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Ad-IZ-VeF"/>
+                                        <exclude reference="Qph-eI-qsO"/>
+                                        <exclude reference="r3X-hO-Uxr"/>
+                                        <exclude reference="yIh-bd-FIT"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.74999999999999978" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlM-OX-993">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem image="previous" id="AA4-hE-j1e">
+                                        <connections>
+                                            <action selector="backButtonAction:" destination="BYZ-38-t0r" id="acy-sa-OIb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="elapsed" id="QyC-6r-us2"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zqc-v6-4oa"/>
+                                    <barButtonItem image="play" id="cqj-Zs-cmR">
+                                        <connections>
+                                            <action selector="playButtonAction:" destination="BYZ-38-t0r" id="37h-pJ-dXa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Uab-ND-8nD"/>
+                                    <barButtonItem title="duration" id="Nhq-cI-sKR"/>
+                                    <barButtonItem image="next" id="DFU-LH-0Ma">
+                                        <connections>
+                                            <action selector="forwardButtonAction:" destination="BYZ-38-t0r" id="rHX-oF-VH4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-Us-OiZ" customClass="MarqueeLabel">
+                                <rect key="frame" x="0.0" y="482" width="320" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="oua-gn-QtI"/>
+                                    <constraint firstAttribute="height" constant="24" id="roA-og-cKj"/>
+                                    <constraint firstAttribute="width" constant="320" id="vYP-dB-XKc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="roA-og-cKj"/>
+                                        <exclude reference="vYP-dB-XKc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s7O-Im-zF3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="0cd-a1-39L"/>
+                            <constraint firstAttribute="centerX" secondItem="4nP-bA-XA6" secondAttribute="centerX" id="1qn-Fu-6bs"/>
+                            <constraint firstItem="4nP-bA-XA6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3T0-d6-2lK"/>
+                            <constraint firstAttribute="centerX" secondItem="4nP-bA-XA6" secondAttribute="centerX" id="3VY-bb-xQo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KlM-OX-993" secondAttribute="bottom" id="4As-pk-7LJ"/>
+                            <constraint firstItem="4nP-bA-XA6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4ep-ie-k1d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KlM-OX-993" secondAttribute="trailing" constant="-16" id="5Ss-QB-1Nb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s7O-Im-zF3" secondAttribute="trailing" constant="-16" id="6Lf-a2-E6o"/>
+                            <constraint firstItem="4nP-bA-XA6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="9r4-l4-hSp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FhO-Us-OiZ" secondAttribute="trailing" constant="-16" id="Kdm-ts-t5g"/>
+                            <constraint firstAttribute="centerX" secondItem="4nP-bA-XA6" secondAttribute="centerX" id="MOD-Wq-9p6"/>
+                            <constraint firstAttribute="centerY" secondItem="FhO-Us-OiZ" secondAttribute="centerY" constant="-210" id="MdW-MV-BfG"/>
+                            <constraint firstItem="FhO-Us-OiZ" firstAttribute="leading" secondItem="s7O-Im-zF3" secondAttribute="trailing" constant="-320" id="N8s-aJ-nvR"/>
+                            <constraint firstItem="s7O-Im-zF3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="PZ6-Lg-QHj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4nP-bA-XA6" secondAttribute="trailing" constant="163" id="YU5-Sf-zfu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4nP-bA-XA6" secondAttribute="trailing" constant="-16" id="iek-gZ-Bnc"/>
+                            <constraint firstItem="KlM-OX-993" firstAttribute="top" secondItem="FhO-Us-OiZ" secondAttribute="bottom" constant="18" id="jv8-Qs-Ztq"/>
+                            <constraint firstAttribute="centerX" secondItem="FhO-Us-OiZ" secondAttribute="centerX" id="q4E-Bd-w8I"/>
+                            <constraint firstItem="KlM-OX-993" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="uKu-Zj-wnj"/>
+                            <constraint firstItem="FhO-Us-OiZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="wV3-LL-0bo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s7O-Im-zF3" secondAttribute="bottom" id="zRa-Fa-7jV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1qn-Fu-6bs"/>
+                                <exclude reference="3VY-bb-xQo"/>
+                                <exclude reference="MOD-Wq-9p6"/>
+                                <exclude reference="YU5-Sf-zfu"/>
+                                <exclude reference="MdW-MV-BfG"/>
+                                <exclude reference="N8s-aJ-nvR"/>
+                                <exclude reference="q4E-Bd-w8I"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="uiCoverImage" destination="4nP-bA-XA6" id="VdJ-Pr-ash"/>
+                        <outlet property="uiDuration" destination="Nhq-cI-sKR" id="MLw-Y8-m0T"/>
+                        <outlet property="uiElapsed" destination="QyC-6r-us2" id="U0o-9D-fgC"/>
+                        <outlet property="uiLabel" destination="FhO-Us-OiZ" id="abd-lJ-e7J"/>
+                        <outlet property="uiPlayButton" destination="cqj-Zs-cmR" id="tcP-8y-p1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1400" height="1050"/>
+        <image name="next" width="29" height="17"/>
+        <image name="placeholder" width="256" height="256"/>
+        <image name="play" width="21" height="23"/>
+        <image name="previous" width="29" height="17"/>
+    </resources>
+</document>
