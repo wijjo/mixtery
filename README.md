@@ -1,24 +1,29 @@
 # mixtery
 
+A simple music player with less repetetive shuffling.
+
 This is shared in the hope that it may be useful to somebody else.
 
-At this point it is probably non-functional, as it is written for an old
-version of Swift and hasn't been tested in a few years. But the last time I
-visited the project it was working well enough for my wife to use as her
-primary player.
+Unfortunatly this code has been neglected, and at this point it is probably
+non-functional. It targets an old version of Swift and hasn't been tested
+in a few years.
 
-It attempts to create a music player with a more sensible shuffle algorithm
-that won't repeat tracks until the complete collection is exhausted.
+But the last time I visited the project it was working well enough for my wife
+to use as her primary player.
 
 Apple's shuffle algorithm is a simple random selection that makes no attempt to
-avoid repetition.
+avoid repetition. It does not care what came before.
 
-Please use and share freely, but I would not mind hearing about things that get
-built with it. Please consider emailing mixtery@wijjo.com.
+This algorithm deals with the music collection as a pool, from which one track
+at a time is chosen, played, and not available again until the pool is exhausted.
 
-I might also suggest double checking that the included image resources are free
-to redistribute. I believe I chose ones that were, but again, since it's been a
-long time I would make extra sure that is true.
+Please enjoy and share freely. I would love to hear about anything that gets
+built with it. Contact me at mixtery@wijjo.com.
+
+I might also suggest double checking that the included resources are free
+to redistribute. I believe I chose ones that were not restricted. But since it's
+been a long time it wouldn't hurt to make extra sure that it is still true.
 
 Cheers!
+
 Steve
